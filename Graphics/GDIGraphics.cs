@@ -7,6 +7,7 @@ namespace BomberCommand
         public GDIGraphics(City city)
         {
             this.city = city;
+
             font = new Font("Console", 48.0f);
         }
 
@@ -35,12 +36,8 @@ namespace BomberCommand
 
         public void DrawBomb(int range, int elevation)
         {
-            graphics.FillEllipse(
-                Brushes.Black,
-                new Rectangle(
-                    range * 16,
-                    (40 - elevation) * 16,
-                    16, 16));
+            new GDIBomb(range, elevation)
+                .Draw(graphics);
         }
 
         public void DrawSky(System.Drawing.Color colour)
