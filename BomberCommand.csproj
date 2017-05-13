@@ -75,6 +75,7 @@
     <Compile Include="Engine\Renderable.cs" />
     <Compile Include="Game\Sky.cs" />
     <Compile Include="Game\WaitingBomb.cs" />
+    <Compile Include="Graphics\GDIGround.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Game.resx">

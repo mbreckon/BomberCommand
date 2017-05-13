@@ -29,9 +29,8 @@ namespace BomberCommand
 
         public void DrawGround()
         {
-            graphics.FillRectangle(
-                Brushes.DarkOliveGreen,
-                new Rectangle(0, 40 * 16, 40 * 16, 16));
+            new GDIGround()
+                .Draw(graphics);
         }
 
         public void DrawBomb(int range, int elevation)
