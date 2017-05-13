@@ -51,11 +51,11 @@
     <Compile Include="Game\Graphics.cs" />
     <Compile Include="Game\Buildings.cs" />
     <Compile Include="Game\City.cs" />
-    <Compile Include="Game\Display.cs" />
+    <Compile Include="Engine\Display.cs" />
     <Compile Include="Game\ExplodingBomb.cs" />
     <Compile Include="Game\ExplodingPlane.cs" />
     <Compile Include="Game\FallingBomb.cs" />
-    <Compile Include="Game\FrameRate.cs" />
+    <Compile Include="Engine\FrameRate.cs" />
     <Compile Include="Game\BombTrigger.cs" />
     <Compile Include="Game\Building.cs" />
     <Compile Include="Game.cs">
@@ -65,13 +65,13 @@
       <DependentUpon>Game.cs</DependentUpon>
     </Compile>
     <Compile Include="Game\FlyingPlane.cs" />
-    <Compile Include="Game\GDIGraphics.cs" />
+    <Compile Include="Graphics\GDIGraphics.cs" />
     <Compile Include="Game\Ground.cs" />
     <Compile Include="Game\HeightRange.cs" />
     <Compile Include="Game\KeyboardInput.cs" />
     <Compile Include="Game\LandedPlane.cs" />
     <Compile Include="Game\Plane.cs" />
-    <Compile Include="Game\Renderable.cs" />
+    <Compile Include="Engine\Renderable.cs" />
     <Compile Include="Game\Sky.cs" />
     <Compile Include="Game\WaitingBomb.cs" />
     <Compile Include="Program.cs" />
