@@ -7,6 +7,7 @@ namespace BomberCommand
         public GDIGraphics(City city)
         {
             this.city = city;
+            font = new Font("Console", 48.0f);
         }
 
         public void Update()
@@ -79,7 +80,11 @@ namespace BomberCommand
 
         public void DrawFailMessage()
         {
-            graphics.DrawString("You failed!", new Font("Console", 48.0f), Brushes.White, new PointF(100, 300));
+            graphics.DrawString(
+                "You failed!", 
+                font, 
+                Brushes.White, 
+                new PointF(100, 300));
         }
 
         public void DrawLandedPlane(int range, int elevation)
@@ -104,10 +109,16 @@ namespace BomberCommand
 
         public void DrawSuccessMessage()
         {
-            graphics.DrawString("You won!", new Font("Console", 48.0f), Brushes.White, new PointF(100, 300));
+            graphics.DrawString(
+                "You won!", 
+                font, 
+                Brushes.White, 
+                new PointF(100, 300));
         }
 
-        private readonly City city;
         private System.Drawing.Graphics graphics;
+
+        private readonly City city;
+        private readonly Font font;
     }
 }
