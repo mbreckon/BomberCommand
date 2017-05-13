@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Drawing;
 
 namespace BomberCommand
 {
@@ -18,14 +17,8 @@ namespace BomberCommand
 
         public void Draw(Graphics graphics)
         {
-            graphics.FillRectangle(
-                Brushes.Blue,
-                new Rectangle(
-                    range * 16,
-                    (40 - elevation) * 16,
-                    16, 16));
-
-            graphics.DrawString("You won!", new Font("Console", 48.0f), Brushes.White, new PointF(100, 300));
+            graphics.DrawLandedPlane(range, elevation);
+            graphics.DrawSuccessMessage();
         }
 
         private readonly int range;

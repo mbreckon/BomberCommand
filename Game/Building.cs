@@ -1,7 +1,4 @@
-﻿using System;
-using System.Drawing;
-
-namespace BomberCommand
+﻿namespace BomberCommand
 {
     class Building
     {
@@ -22,15 +19,7 @@ namespace BomberCommand
 
         public void Draw(Graphics graphics)
         {
-            var pixelHeight = 16 * height;
-
-            graphics.FillRectangle(
-                Brushes.Black,
-                new Rectangle(
-                    zone * 16, 
-                    (40 * 16) - pixelHeight, 
-                    16, 
-                    pixelHeight));
+            graphics.DrawBuilding(zone, height);
         }
 
         public bool Collides(int zone, int elevation)

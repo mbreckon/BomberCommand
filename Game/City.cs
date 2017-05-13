@@ -1,11 +1,12 @@
 ﻿using System.Collections.Generic;
-using System.Drawing;
 
 namespace BomberCommand
 {
-    class City : Renderable
+    class City
     {
-        public City(List<Building> buildings, Plane plane)
+        public City(
+            List<Building> buildings, 
+            Plane plane)
         {
             this.buildings = buildings;
             this.plane = plane;

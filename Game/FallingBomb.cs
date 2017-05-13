@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Drawing;
 
 namespace BomberCommand
 {
@@ -34,12 +33,7 @@ namespace BomberCommand
 
         public void Draw(Graphics graphics)
         {
-            graphics.FillEllipse(
-                Brushes.Black, 
-                new Rectangle(
-                    range * 16, 
-                    (40 - elevation) * 16, 
-                    16, 16));
+            graphics.DrawBomb(range, elevation);
         }
 
         private readonly int range;

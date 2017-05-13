@@ -3,7 +3,7 @@
 
 It is deliberately retro - how I remember the feel of the game - clunky, monochrome, an extremely simple mechanic and the forced sense of panic.
 
-This version is also a deliberate attempt tp explore object oriented design ideas that are generally outside what many people are practicing as OO. If this was performance constrained (e.g. being created on the original VIC20 in assembler or some crazy new 3D graphics) the implementation details would overwhelm the ability to model the problem in an object way. One of the possible benefits of this approach is the visibility of the "domain" at the top level - all the classes should be something relevant to the game.
+This version is also a deliberate attempt to explore object oriented design ideas that are generally outside what many people are practicing as OO. If this was performance constrained (e.g. being created on the original VIC20 in assembler or some crazy new 3D graphics) the implementation details would overwhelm the ability to model the problem in an object way. One of the possible benefits of this approach is the visibility of the "domain" at the top level - all the classes should be something relevant to the game.
 
 ... and yes I know that no serious games developer uses WinForms and GDI... 
 

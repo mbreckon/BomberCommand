@@ -31,24 +31,7 @@ namespace BomberCommand
 
         public void Draw(Graphics graphics)
         {
-            if (frameCount == 0)
-            {
-                graphics.FillEllipse(
-                    Brushes.Yellow,
-                    new Rectangle(
-                        (range * 16),
-                        ((40 - elevation) * 16),
-                        16, 16));
-            }
-            else
-            {
-                graphics.FillEllipse(
-                    Brushes.Orange,
-                    new Rectangle(
-                        (range * 16) - 4,
-                        ((40 - elevation) * 16) - 4,
-                        28, 28));
-            }
+            graphics.DrawExplosion(range, elevation, frameCount);
         }
 
         private readonly int range;

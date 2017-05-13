@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Game\Bomb.cs" />
+    <Compile Include="Game\Graphics.cs" />
     <Compile Include="Game\Buildings.cs" />
     <Compile Include="Game\City.cs" />
     <Compile Include="Game\Display.cs" />
@@ -64,6 +65,7 @@
       <DependentUpon>Game.cs</DependentUpon>
     </Compile>
     <Compile Include="Game\FlyingPlane.cs" />
+    <Compile Include="Game\GDIGraphics.cs" />
     <Compile Include="Game\Ground.cs" />
     <Compile Include="Game\HeightRange.cs" />
     <Compile Include="Game\KeyboardInput.cs" />

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
+﻿using System.Collections.Generic;
 using System.Linq;
 
 namespace BomberCommand
@@ -37,13 +35,7 @@ namespace BomberCommand
         public void Draw(Graphics graphics)
         {
             bombTrigger.Draw(graphics);
-
-            graphics.FillRectangle(
-                Brushes.Black, 
-                new Rectangle(
-                    range * 16, 
-                    (40 - elevation) * 16, 
-                    16, 16));
+            graphics.DrawFlyingPlane(range, elevation);
         }
 
         private readonly BombTrigger bombTrigger;

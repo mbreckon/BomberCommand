@@ -11,7 +11,7 @@ namespace BomberCommand
 
         public void Draw(Graphics graphics)
         {
-            graphics.Clear(colour);
+            graphics.DrawSky(colour);
         }
 
         private Color colour;

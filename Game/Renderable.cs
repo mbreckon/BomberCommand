@@ -1,10 +1,8 @@
-﻿using System.Drawing;
-
-namespace BomberCommand
+﻿namespace BomberCommand
 {
     interface Renderable
     {
         void Update();
-        void Draw(Graphics g);
+        void Draw(System.Drawing.Graphics g);
     }
 }
