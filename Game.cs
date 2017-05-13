@@ -8,12 +8,15 @@ namespace BomberCommand
         {
             InitializeComponent();
 
-            new FrameRate(5,
-                new Display(this,
+            new FrameRate(
+                5,
+                new Display(
+                    this,
                     new GDIGraphics(
                         new City(
                             new Buildings(
-                                new HeightRange(0, 30)).Build(40),
+                                new HeightRange(0, 30)
+                                ).Build(40),
                             new FlyingPlane(
                                 new BombTrigger(
                                     new KeyboardInput(this)
