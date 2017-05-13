@@ -65,6 +65,7 @@
       <DependentUpon>Game.cs</DependentUpon>
     </Compile>
     <Compile Include="Game\FlyingPlane.cs" />
+    <Compile Include="Graphics\GDIBuilding.cs" />
     <Compile Include="Graphics\GDIGraphics.cs" />
     <Compile Include="Game\Ground.cs" />
     <Compile Include="Game\HeightRange.cs" />

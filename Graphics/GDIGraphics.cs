@@ -23,15 +23,8 @@ namespace BomberCommand
 
         public void DrawBuilding(int zone, int height)
         {
-            var pixelHeight = 16 * height;
-
-            graphics.FillRectangle(
-                Brushes.Black,
-                new Rectangle(
-                    zone * 16,
-                    (40 * 16) - pixelHeight,
-                    16,
-                    pixelHeight));
+            new GDIBuilding(zone, height)
+                .Draw(graphics);
         }
 
         public void DrawGround()
