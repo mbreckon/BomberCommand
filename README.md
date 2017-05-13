@@ -12,7 +12,7 @@ You are a pilot on a bombing raid over an enemy city. You don't have enough fuel
 
 ## Screenshots
 
-![Screenshot](screenshot.png)
+![Screenshot](screenshot.PNG)
 
 ## Known Issues
 * A pure random distribution makes the game way too hard and possibly unwinnable in some situations. Need to hard code some sensible values or create a better distribution for the buildings.
