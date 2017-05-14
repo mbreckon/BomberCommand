@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using System.Drawing.Drawing2D;
 
 namespace BomberCommand
 {
@@ -17,6 +18,8 @@ namespace BomberCommand
             buildingBitmap = new Bitmap(
                 BomberCommand.Properties.Resources.building1);
 
+            sky = new GDISky();
+            
             font = new Font("Console", 48.0f);
         }
 
@@ -59,7 +62,7 @@ namespace BomberCommand
 
         public void DrawSky(System.Drawing.Color colour)
         {
-            graphics.Clear(colour);
+            sky.Draw(graphics);
         }
 
         public void DrawExplosion(int range, int elevation, int frame)
@@ -127,5 +130,6 @@ namespace BomberCommand
         private readonly Bitmap planeBitmap;
         private readonly Bitmap bombBitmap;
         private readonly Bitmap buildingBitmap;
+        private readonly GDISky sky;
     }
 }

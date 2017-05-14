@@ -77,6 +77,7 @@
     <Compile Include="Game\Sky.cs" />
     <Compile Include="Game\WaitingBomb.cs" />
     <Compile Include="Graphics\GDIGround.cs" />
+    <Compile Include="Graphics\GDISky.cs" />
     <Compile Include="Graphics\GDISpriteBasedGraphics.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
