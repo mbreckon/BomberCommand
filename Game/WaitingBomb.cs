@@ -17,7 +17,7 @@ namespace BomberCommand
             {
                 return new FallingBomb(
                     planeRange, 
-                    planeElevation);
+                    planeElevation - 1);
             }
 
             return this;

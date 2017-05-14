@@ -13,7 +13,7 @@
             if (bombZone == zone)
             {
                 height = (bombHeight <= height) ? 
-                    (height - 1) : height;
+                    (bombHeight - 1) : height;
             }
         }
 
