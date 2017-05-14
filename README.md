@@ -1,5 +1,5 @@
 ﻿# Bomber Command
-"Inspired" by reading of Bomber Command's horrific bombing of German cities during World War Two and my memories of this being one of the first computer games I ever played, on a VIC20 when I was 10 or 11 years old.
+"Inspired" by reading of Bomber Command's horrific bombing of German cities during World War Two and my memories of this being one of the first computer games I ever played, on a VIC20 when I was 10 or 11 years old (it turns out it was called City Bomber: https://www.youtube.com/watch?v=0E88DNkudTs)
 
 It is deliberately retro - how I remember the feel of the game - clunky, monochrome, an extremely simple mechanic and the forced sense of panic.
 
