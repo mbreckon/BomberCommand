@@ -14,6 +14,9 @@ namespace BomberCommand
             bombBitmap = new Bitmap(
                 BomberCommand.Properties.Resources.bomb);
 
+            buildingBitmap = new Bitmap(
+                BomberCommand.Properties.Resources.building1);
+
             font = new Font("Console", 48.0f);
         }
 
@@ -30,8 +33,13 @@ namespace BomberCommand
 
         public void DrawBuilding(int zone, int height)
         {
-            new GDIBuilding(zone, height)
-                .Draw(graphics);
+            for (int i = 1; i <= height; i++)
+            {
+                graphics.DrawImage(buildingBitmap,
+                    new Point(
+                        zone * 16,
+                        (40 - i) * 16));
+            }
         }
 
         public void DrawGround()
@@ -118,5 +126,6 @@ namespace BomberCommand
         private readonly Font font;
         private readonly Bitmap planeBitmap;
         private readonly Bitmap bombBitmap;
+        private readonly Bitmap buildingBitmap;
     }
 }
